@@ -1,0 +1,9 @@
+.wrapper .content .feedback-container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+
+.form-check-label {
+    font-weight: normal;
+}

@@ -13,7 +13,7 @@ body {
 header {
     width: 100%;
     height: 100vh;
-    background: url(images/hollywood.JPG) no-repeat 50% 50%;
+    background: url(images/hollywood.jpg) no-repeat 50% 50%;
     background-size: cover;
 }
 
