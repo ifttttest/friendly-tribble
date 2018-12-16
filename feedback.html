@@ -1,0 +1,176 @@
+﻿<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title></title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.0/css/all.css" integrity="sha384-aOkxzJ5uQz7WBObEZcHvV5JvRW3TUc2rNPA7pe3AwnsUohiw1Vj2Rgx2KSOkF5+h" crossorigin="anonymous">
+    <link rel="stylesheet" href="style/header.css">
+    <link rel="stylesheet" href="style/container.css">
+    <link rel="stylesheet" href="style/footer.css">
+    <link rel="stylesheet" href="style/body.css">
+
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+            <a class="navbar-brand" href="#">Carousel</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="home.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="review.html">Review</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="schedule.html">Schedule</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="team.html">Team</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Feedback<span class="sr-only">(current)</span></a>
+                    </li>
+                </ul>
+                <form class="form-inline my-2 my-lg-0">
+                    <input class="form-control mr-sm-2 rounded-0 w-75" type="search" placeholder="Search">
+                    <button class="btn btn-light my-2 my-sm-0 rounded-0" type="submit"><i class="fa fa-search"></i></button>
+                </form>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Container -->
+    <div class="container pt-5">
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="home.html">Home</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Feedback</li>
+            </ol>
+            <div class="feedback-container">
+                <h2>Kindly provide your feedback</h2>
+                <form action="/action-page.php" role="form" method="post" id="reused-form">
+                    <div class="row">
+                        <div class="col-sm-12 form-group">
+                            <label>How do you rate your overall experience?</label><br />
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="bad">
+                                <label class="form-check-label" for="inlineRadio1">Bad</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="average">
+                                <label class="form-check-label" for="inlineRadio2">Average</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="good">
+                                <label class="form-check-label" for="inlineRadio3">Good</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="col">
+                            <label for="query">Country to Visit:</label>
+                            <input type="text" class="form-control" placeholder="Country">
+                        </div>
+                        <div class="col">
+                            <label for="query">Travelling Via:</label>
+                            <select class="custom-select" id="inlineFormCustomSelectPref">
+                                <option selected>Choose...</option>
+                                <option value="1">Land Transportation</option>
+                                <option value="2">Flight</option>
+                                <option value="3">Cruise</option>
+                            </select>
+
+                        </div>
+                    </div>
+                    <div class="form-row pt-3">
+                        <div class="col">
+                            <label for="query">Your Budget:</label>
+                            <select class="custom-select" id="inlineFormCustomSelectPref">
+                                <option selected>Choose...</option>
+                                <option value="1">200-500 ($)</option>
+                                <option value="2">501-1000 ($)</option>
+                                <option value="3">1000-Onward ($)</option>
+                            </select>
+
+                        </div>
+                        <div class="col">
+                            <label for="query">Trip Preference:</label>
+                            <select class="custom-select" id="inlineFormCustomSelectPref">
+                                <option selected>Choose...</option>
+                                <option value="1">Solo</option>
+                                <option value="2">Group</option>
+                                <option value="3">Honeymoon</option>
+                            </select>
+
+                        </div>
+                    </div>
+                    <div class="form-group pt-3">
+                        <label for="email">Email:</label>
+                        <input type="email" class="form-control" id="email" placeholder="Enter email (optional)" name="email">
+                        <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                    </div>
+                    <div class="form-group">
+                        <label for="query">Feedback Query:</label>
+                        <textarea class="form-control" id="exampleFormControlTextarea1" placeholder="Description of your query" rows="3"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-default">Submit</button>
+                </form>
+            </div>
+        </nav>
+
+    </div>
+    <!-- Footer -->
+    <footer class="container-fluid p-5 p-md-5 bg-dark text-light ">
+        <div class="row">
+            <div class="col-12 col-md">
+                <h5>Newsletter</h5>
+                <h6 class="text-center">
+                    Subscribe to Monthly Newsletter about incoming trip.
+                </h6>
+            </div>
+            <div class="col-6 col-md">
+                <h5>Navigation</h5>
+                <ul class="list-unstyled text-small">
+                    <li><a class="text-primary" href="home.html">Home</a></li>
+                    <li><a class="text-primary" href="review.html">Review</a></li>
+                    <li><a class="text-primary" href="team.html">Team</a></li>
+                    <li><a class="text-primary" href="schedule.html">Schedule</a></li>
+                    <li><a class="text-primary" href="facebook.html">Feedback</a></li>
+                </ul>
+            </div>
+            <div class="col-6 col-md">
+                <h5>Subscribe</h5>
+                <ul class="list-unstyled text-small d-flex justify-content-start">
+                    <li><a href="#"><i class="fab fa-facebook fa-2x"></i></a></li>
+                    <li><a href="#"><i class="fab fa-twitter fa-2x"></i></a></li>
+                    <li><a href="#"><i class="fab fa-instagram fa-2x"></i></a></li>
+                    <li><a href="#"><i class="fab fa-discord fa-2x"></i></a></li>
+                </ul>
+            </div>
+            <div class="col-6 col-md">
+                <h5>About</h5>
+                <h6>
+                    A website formerly created to finish 2nd year UI website of Web Programming subject project.
+                </h6>
+            </div>
+        </div>
+        <small class="d-block mb-3 text-muted text-center">Copyright &copy; by Kekek Team. 2017-2018</small>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" "></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" "></script>
+
+</body>
+
+</html>

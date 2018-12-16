@@ -1,0 +1,29 @@
+/*
+    Centeralize content in navbar
+*/
+.navbar ul {
+    text-align: center;
+}
+
+/*
+    Remove outline of navbar search button
+*/
+.navbar .navbar-toggler {
+    outline: none;
+}
+
+.navbar button {
+    border: none;
+}
+.navbar input, .navbar input:focus{
+    background-color: transparent;
+    border: none;
+    box-shadow: none;
+    border-bottom: solid grey;
+}
+
+@media (max-width: 767.98px) {
+    .navbar input, .navbar input:focus {
+        margin-left: 3em;
+    }
+}
